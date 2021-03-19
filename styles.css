@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Montserrat", sans-serif;
+	min-height: 100vh;
+	background-image: linear-gradient(120deg, #f0931e, #facb0f);
+	color: rgb(224, 224, 224);
+}
+h1 {
+	font-size: 3rem;
+	text-align: center;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+.keypad {
+	width: 50%;
+	margin: 0 auto;
+}
+.keys {
+	height: 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	text-align: center;
+	margin-top: 40px;
+}
+.screen {
+	grid-column: 1/4;
+	background-color: white;
+	border-radius: 10px;
+	color: #f0931e;
+	font-size: 3rem;
+	justify-content: center;
+	text-align: end;
+	padding: 1%;
+	height: 4rem;
+	overflow: hidden;
+}
+.key {
+	color: #a15a02;
+	font-size: 2rem;
+	padding: 1%;
+	height: 2.2rem;
+	margin-top: 1.5rem;
+}
+.backspace {
+	grid-column: 1/4;
+	font-size: 2rem;
+	color: #a15a02;
+	height: 2.2rem;
+}
+.backspace:hover {
+	color: black;
+	cursor: pointer;
+	font-size: 2.2rem;
+}
+.key:hover {
+	color: black;
+	cursor: pointer;
+	font-size: 2.2rem;
+}
